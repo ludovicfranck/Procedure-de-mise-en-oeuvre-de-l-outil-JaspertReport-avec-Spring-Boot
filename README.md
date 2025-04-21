@@ -40,9 +40,22 @@ Ajoutez les dépendances suivantes à votre fichier `pom.xml` :
 ```
 
 ### 1.2 Structure du projet 
-confere dossier src du depot
-
-
+```
+src/
+├── main/
+│   ├── java/
+│   │   └── com/example/jasperdemo/
+│   │       ├── config/
+│   │       ├── controller/
+│   │       ├── model/
+│   │       ├── repository/
+│   │       ├── service/
+│   │       └── JasperDemoApplication.java
+│   └── resources/
+│       ├── reports/          # Dossier pour les fichiers .jrxml
+│       ├── static/           # Fichiers statiques
+│       └── templates/        # Fichiers de template
+```
 ---
 
 ## 2. Création d’un Rapport Simple
