@@ -53,6 +53,30 @@ Dans le dossier `src/main/resources/reports/`, créez un fichier nommé `simple_
 
 > 💡 Ce fichier contient la structure du rapport au format XML généré par Jaspersoft Studio. Vous pouvez y définir des titres, colonnes, champs, etc.
 
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" 
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+              xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" 
+              name="simple_report" 
+              pageWidth="595" 
+              pageHeight="842" 
+              columnWidth="555" 
+              leftMargin="20" 
+              rightMargin="20" 
+              topMargin="20" 
+              bottomMargin="20">
+    <title>
+        <band height="50">
+            <staticText>
+                <reportElement x="0" y="0" width="555" height="30"/>
+                <text><![CDATA[Hello JasperReports from Spring Boot!]]></text>
+            </staticText>
+        </band>
+    </title>
+</jasperReport>
+```
+
 ---
 
 ## 3. Service de Génération de Rapports
